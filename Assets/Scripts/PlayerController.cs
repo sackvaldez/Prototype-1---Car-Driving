@@ -7,8 +7,8 @@ using UnityEngine.XR;
 public class PlayerController : MonoBehaviour
 {
     // Private variables
-    private float Speed = 50.0f;
-    private float turnSpeed = 25.0f;
+    [SerializeField] static float Speed = 50.0f;
+    [SerializeField] readonly float turnSpeed = 25.0f;
     private float horizontalInput;
     private float forwardInput;
     // Start is called before the first frame update
